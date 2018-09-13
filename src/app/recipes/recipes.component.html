@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-recipes-list (sendRec)="recElement=$event"></app-recipes-list>
+  </div>
+  <div class="col-md-7">
+    <app-recipes-detail *ngIf="recElement;else infoData"
+    [rec]=recElement>
+  </app-recipes-detail>
+    <ng-template #infoData>
+  <p>Please choose Item</p>
+  </ng-template>
+  </div>
+</div>
+

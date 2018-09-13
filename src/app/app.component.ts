@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  name = 'Recpie';
+  onNav(newChoose)
+ {
+  console.log("newChoose");
+
+   console.log(newChoose);
+  this.name = newChoose;
+ }
 }

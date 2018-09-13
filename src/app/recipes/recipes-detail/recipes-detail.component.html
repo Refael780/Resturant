@@ -1,0 +1,30 @@
+<div class="row">
+        <div class="col-xs-12">
+    <img [src]="rec.imagePath" alt="{{rec.name}}"  style="max-height: 300px">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>{{rec.name}}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group">
+            <button
+            type="button" class="btn btn-primary dropdown-toggle">Manage Recpice<span class="caret">
+            </span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Shping List  </a>  </li>
+                <li><a href="#"> Recpice </a> </li>
+                <li><a href="#"> Recpies </a> </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        {{rec.description}}
+    </div>
+</div>

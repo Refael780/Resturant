@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-xs-12">
+     <button class="btn btn-success">New Recpies</button>
+    </div>
+</div> 
+    <div class="row">
+    <div class="col-xs-12">
+        <app-recipes-item 
+         *ngFor ="let elemntofRec of recipes"
+        [recipe]="elemntofRec" (givedet)="PassData(elemntofRec)" ></app-recipes-item>  <!--
+            1)element r from recpies(recpies-list.ts ->array) to recpies property in recpies items
+            2) becuse we send data from parant to child  we need to use @input
+            3)becuse we want to view the recpie in recpie-items(one by one) we need to import recpie.model in recpie-items.ts !-->  
+    </div>
+</div>
+
