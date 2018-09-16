@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  msg='';
   name = 'Recpie';
   onNav(newChoose)
  {
@@ -14,5 +14,9 @@ export class AppComponent {
 
    console.log(newChoose);
   this.name = newChoose;
+ }
+  PlayViewWithMassage(massage:string)
+  {
+   this.msg= massage;
  }
 }

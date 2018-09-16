@@ -10,7 +10,9 @@ import { HeaderComponent } from './header/header.component';
 import{RecipesListComponent} from './recipes/recipes-list/recipes-list.component'
 import{RecipesItemComponent} from './recipes/recipes-list/recipes-item/recipes-item.component';
 import{ShoppingEditComponent}from './shopping-list/shopping-edit/shopping-edit.component';
-import {ShoppingListComponent } from './shopping-list/shopping-list.component'
+import {ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { NewFetureComponent } from './new-feture/new-feture.component';
+import { ViewComponent } from './view/view.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import {ShoppingListComponent } from './shopping-list/shopping-list.component'
     RecipesListComponent,
     RecipesItemComponent,
     ShoppingEditComponent,
-    ShoppingListComponent
+    ShoppingListComponent,
+    NewFetureComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule
