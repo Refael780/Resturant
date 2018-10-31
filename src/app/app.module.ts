@@ -12,7 +12,9 @@ import{RecipesItemComponent} from './recipes/recipes-list/recipes-item/recipes-i
 import{ShoppingEditComponent}from './shopping-list/shopping-edit/shopping-edit.component';
 import {ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { NewFetureComponent } from './new-feture/new-feture.component';
-import { ViewComponent } from './view/view.component'
+import { ViewComponent } from './view/view.component';
+import { DropdownDirective } from './shere/dropdown.directive';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,12 +26,14 @@ import { ViewComponent } from './view/view.component'
     ShoppingEditComponent,
     ShoppingListComponent,
     NewFetureComponent,
-    ViewComponent
+    ViewComponent,
+    DropdownDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

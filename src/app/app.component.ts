@@ -10,9 +10,6 @@ export class AppComponent {
   name = 'Recpie';
   onNav(newChoose)
  {
-  console.log("newChoose");
-
-   console.log(newChoose);
   this.name = newChoose;
  }
   PlayViewWithMassage(massage:string)
